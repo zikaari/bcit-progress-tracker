@@ -35,4 +35,4 @@ Logging is done using Rollbar.
 ___
 ## Downloads
 
-Extension is available at [Chrome webstore - BCIT ProgressTracker](https://chrome.google.com/webstore/detail/bcit-progresstracker/kbnklenakgjfodgloppngbnaidljgepi)
+Extension is available on [Chrome webstore - BCIT ProgressTracker](https://chrome.google.com/webstore/detail/bcit-progresstracker/kbnklenakgjfodgloppngbnaidljgepi)
