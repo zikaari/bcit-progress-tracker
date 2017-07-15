@@ -12,7 +12,7 @@ ___
 
 ![bcit.ca/study/programs/5500cert after](http://i.imgur.com/jbdyzrR.png)
 But why, you ask?
-> *"Every second spent on something that could've been saved = a second wasted"*
+> *"Every second spent that could've been saved = a second wasted"*
 \- Unknown
 
 Every semester students visit this page, but before they can decide which courses to register next, they first have to mentally filter out the ones that they've done and the one's they are doing. 
