@@ -1,0 +1,72 @@
+.prog-trkr
+    &.course-table
+        display: none
+        overflow: auto
+        border-collapse: collapse
+        height: 100%
+        &.active
+            display: block
+    &.program-details
+        display: flex
+        height: 100% 
+        background: #fcfcfc
+        border-top: 1px solid #dbdbdb
+        &-c
+            font-size: 12px
+            border: none !important
+            &.c-id
+
+            &.c-name
+                a                 
+                    text-decoration: none   
+                    font-weight: 100 !important
+                    color: black
+            &.c-credits
+                width: 30px
+                text-align: center
+
+    &.program-detailed-pie    
+        width: 45%
+        padding-top: 10px
+        text-align: center
+        
+    &.program-detail-tables
+        height: 100%
+        overflow: hidden
+    &.program-detail-table
+        margin-left: auto
+        width: 100%    
+        border-left: 1px solid #dbdbdb
+        background: #fff
+        display: flex
+        flex-direction: column
+        tr:nth-child(2n)
+            background: #f8f8f8
+        td
+            padding: 5px
+    &.program-detail-tabs
+        background: #f3f3f3
+        ul
+            padding: 0
+            display: flex
+            li
+                flex-grow: 1
+
+        button 
+            width: 100%
+            height: 24px  
+            text-transform: capitalize
+            font-size: 13px
+            color: #333333
+            // background: #FFF
+            padding: 4px
+            // padding-top: 7px
+            &:not(:first-child)
+                border-left: 1px solid #e5e5e5
+            &.active
+                border-bottom: 2px solid #5ea5ef
+                color: black
+                // padding-top: 3px
+                // font-size: 1.2em  
+                // background: #f3f3f3
+                // font-weight: 600

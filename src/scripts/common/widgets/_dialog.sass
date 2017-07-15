@@ -1,0 +1,51 @@
+.dialog-box-root
+    -webkit-user-select: none
+    user-select: none    
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(255, 255, 255, 0.76)
+    z-index: 99999999
+    margin: auto
+    font-size: 0.9em
+    perspective: 1000px
+    .dialog-box-body
+        position: relative 
+        max-width: 420px
+        box-shadow: 0 1px 8px -2px
+        margin: auto
+        text-align: center
+        padding-top: 10px
+        left: 0
+        right: 0
+        top: 10vh
+        background: white
+        box-shadow: 0 1px 10px -2px
+        transform: rotateX(45deg) translateY(20px)
+        transform-origin: top
+        transition: 0.3s transform, 0.2s opacity
+        opacity: 0
+
+    &.visible .dialog-box-body    
+        transform: none
+        opacity: 1
+
+.dialog-box-buttons
+    padding: 10px 0
+    button
+        font-size: 0.9em
+        border: 0
+        background-blend-mode: overlay
+        background: linear-gradient(rgba(255, 255, 255, 0.16), rgba(0, 0, 0, 0.56))
+        background-color: #008fff
+        padding: 6px 14px
+        margin: 0 8px
+        border-radius: 50em
+        color: #FFF
+        outline: none
+        &.ok
+            background-color: #00a2ff
+        &.cancel
+            background-color: #ff4040

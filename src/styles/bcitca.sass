@@ -1,0 +1,78 @@
+@import './_reset'
+@import '../scripts/content/components/_ProgramRecordList'
+
+.header-x
+    background: #444444
+    display: block
+    padding: 4px
+    color: #d4d4d4
+
+.prog-trkr
+    &.course-in-progress
+        td:first-child
+            box-shadow: 2px 0 0 #00e325 inset
+    &.course-done
+        opacity: .4
+        filter: saturate(0)
+        &:hover
+            opacity: 1
+            filter: none
+
+    &.course-stats
+        position: relative
+        top: 2px
+        user-select: none
+        cursor: pointer
+        outline: none
+        text-align: left
+        height: 100%
+        width: 100%
+        .course-progress
+            width: 100%
+            margin: auto                
+            position: relative
+            width: 33.6px
+            height: 33.6px
+            border: 1px solid #fff
+            display: inline-block
+            border-radius: 50em
+            background: #FFF
+            z-index: 1
+
+        .course-credits
+            position: absolute
+            margin-top: 10px
+            margin-left: 9px
+            z-index: 2
+            font-weight: bold
+            color: #6e6e6e
+            /* font-size: .9em */
+
+
+    .course-linked-programs
+        position: absolute
+        margin-left: -8px
+        margin-top: -11px
+        span.count            
+            position: relative
+            top: 12px
+            left: 6px
+            font-size: 0.8em
+            /* background: #0b9623 */
+            color: #8a8a8a
+            padding: 2px
+            border-radius: 50em
+
+        span.bg
+            font-size: 2.1em
+            font-weight: bold
+            position: absolute
+            color: #74ff87
+            display: inline-block
+            &:after
+                content: ''
+                display: inline-block
+                border-right: 6px solid rgb(255, 255, 255)
+                margin-left: -7px
+                height: 20px
+

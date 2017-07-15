@@ -1,0 +1,94 @@
+@import './_ProgramDetails'
+.prog-trkr
+    &::-webkit-scrollbar 
+        width: 4px
+    
+    &::-webkit-scrollbar-track
+        background: #FFF
+
+    &::-webkit-scrollbar-thumb
+        background: #e3e2e2
+        border-radius: 50em
+    &:hover
+        &::-webkit-scrollbar-thumb
+            background: #727272 
+
+
+.prog-trkr
+    &.program-record
+        padding: 2px
+        background: #FFF
+        transition: .2s transform ease-in-out
+        display: flex
+        flex-direction: column
+        &.detail-view-active
+            height: 100%
+        > div.header
+            display: flex
+            align-items: center
+    &.badge    
+        cursor: default
+        user-select: none
+        border-radius: 50em
+        text-transform: uppercase
+        padding: 4px
+        font-size: 10px
+        color: #FFF
+    &.program-delivery-type 
+        min-width: 24px
+        text-align: center
+        .badge
+            background: #c2c2c2
+            &.pt
+                background: #17b817
+            &.ft
+                background: crimson
+                
+    &.program-credential 
+        min-width: 50px
+        text-align: center
+        .badge
+            background: #31c47c
+            &.acert
+                background: #0091ff
+            &.cert
+                background: #ff4b00
+    &.program-name    
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+        a
+            text-decoration: none
+            font-size: 12px
+            font-weight: 100
+            color: black
+    &.program-detail-btn
+        cursor: pointer
+        overflow: hidden
+        width: 30px
+        height: 30px
+        outline: none
+        .close-btn-icon:before
+            content: '✖'
+            font-style: normal
+            border-radius: 1em
+            background: #d7d7d7
+            padding: 4px 6px
+            color: #FFF
+            font-size: 11px
+
+    &.program-progress-pie
+        margin-left: auto    
+        // min-width: 40px
+        text-align: right
+    &.program-record-list
+        list-style: none
+        height: 200px
+        overflow: auto
+        padding-left: 6px
+        padding-right: 2px
+        background: #FFF
+        &.detail-view-collapsed
+        &.detail-view-active
+            overflow: hidden
+            padding-right: 6px

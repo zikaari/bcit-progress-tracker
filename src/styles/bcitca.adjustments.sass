@@ -1,0 +1,18 @@
+.prog-trkr
+    &.course-in-progress
+        td:first-child
+            box-shadow: 2px 0 0 #00e325 inset
+    &.course-done
+        opacity: .4
+        filter: saturate(0)
+        &:hover
+            opacity: 1
+            filter: none
+
+    &.course-details
+        td
+            display: none
+            max-width: 444px
+        &.active
+            td
+                display: table-cell
